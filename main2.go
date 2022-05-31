@@ -17,7 +17,7 @@ import (
 func main() {
 	Sigsetup()
 
-	gopanic()
+	//gopanic()
 	gopanic()
 
 	fmt.Println("1")
@@ -26,12 +26,13 @@ func main() {
 	str := "From Golang"
 	cStr := C.CString(str)
 	defer C.free(unsafe.Pointer(cStr))
-	C.test_crash2()
+	//C.test_crash2()
 	C.test_crash2()
 	// C.test_crash(cStr)
 	// testCrash3()
 
-	select {}
+	//select {}
+	fmt.Println("test test test test")
 }
 
 func gopanic() {
